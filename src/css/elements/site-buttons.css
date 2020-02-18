@@ -1,0 +1,15 @@
+.btn{
+	color: #000;
+	background-color: transparent;
+	border: 1px solid #000;
+	border-radius: 30px;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+.btn-default{
+	color: #fff;
+	background-color: #000;
+}
+
+/*TODO add focus, hover, active, visited styles*/

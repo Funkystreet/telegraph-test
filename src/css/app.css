@@ -1,0 +1,99 @@
+@import 'core/reset.css';
+@import 'elements/site-logo.css';
+@import 'elements/site-buttons.css';
+
+
+/*TODO Enable nesting and autoprefixer*/
+
+.container{
+	max-width: 1536px; 
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.grid {
+    display: grid;
+    flex-wrap: nowrap;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(12,1fr);
+    
+}
+
+.comments{
+	grid-column: 1/13;
+
+}
+
+
+.comments-header {
+    border: 1px solid #ddd;
+    border-style: solid none;
+    padding: 1rem 0;
+    display: grid;
+    align-items: center;
+}
+
+
+.sort-buttons {
+    grid-column: 12;
+    text-align: right;
+}
+
+.sort-buttons > span,
+.sort-buttons > button{
+	margin-left: 1rem;
+}
+
+.comments-count{
+	position: relative;
+	padding-left: 24px;
+}
+.comments-count:before{
+	/* TODO Download local copy of the comments logo, for the test */
+	background: url(https://www.telegraph.co.uk/etc/designs/telegraph/core/clientlibs/ui/dist/static/images/comment-speech-bubble.svg) no-repeat 50% 50%;
+    background-size: 14px;
+    content: "";
+    height: 14px;
+    left: 0;
+    position: absolute;
+    top: calc(50% - 7px);
+    width: 14px;
+}
+
+.comment{
+	padding: 1rem 0;
+	border-bottom: 1px solid #ddd;
+}
+.comment-title{
+	margin-bottom: 0.75rem;
+}
+
+.comment-author{
+	    font-family: Austin News Deck Semibold,Georgia,Times,serif;
+	    font-size: 1rem;
+	    line-height: 1.17;
+	    color: #222;
+	    cursor: default;
+	    font-weight: 600;
+	    margin-right: 8px;
+	    text-decoration: none;
+	}
+time{
+	font-size: 0.75rem;
+}
+.comment-likes{
+ float: right;
+ font-weight: bold;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.comments{
+		grid-column: 2/11;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.comments{ 
+		grid-column: 3/9;
+	}
+}

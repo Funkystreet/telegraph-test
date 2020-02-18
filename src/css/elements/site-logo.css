@@ -1,0 +1,20 @@
+
+.site-logo {
+	/*height: 48px;*/
+	/*width: 285px*/
+	grid-column: 1/8;	
+	padding: 2rem 0;
+	margin-right: 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+	.site-logo {		
+		grid-column: 1/5;			
+	}
+}
+
+@media (min-width: 1025px){
+	.site-logo {		
+		grid-column: 1/3;
+	}
+}
