@@ -35,13 +35,17 @@
 
 
 .sort-buttons {
-    grid-column: 12;
+    grid-column: 7/12;
     text-align: right;
 }
 
 .sort-buttons > span,
 .sort-buttons > button{
 	margin-left: 1rem;
+}
+
+.comments-count-wrapper{
+	grid-column: 1/6;
 }
 
 .comments-count{
